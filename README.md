@@ -31,7 +31,7 @@
 
 ---
 
-TiMER connects numerical time-series representations with language models through **multi-granularity temporal encoding**, **query-adaptive expert routing**, and **time-to-language alignment**. The framework dynamically combines local, global, and cross-granularity evidence according to the input question; its recommended configuration keeps both the time encoder and language model frozen.
+**TiMER** (**Ti**me-series and language alignment with **M**ulti-granularity **E**xpert **R**outing) is a time-series–language alignment framework for Time-Series Question Answering (TSQA). Instead of using the same fixed time-series representation for every question, TiMER constructs query-dependent temporal information and aligns it directly with the input space of a frozen language model.
 
 This repository provides self-contained training and evaluation entry points for both **Frozen-LLM** and **LoRA** settings.
 
@@ -43,22 +43,16 @@ This repository provides self-contained training and evaluation entry points for
   </a>
 </p>
 
-<p align="center"><em>Click the figure to open the full-resolution PDF.</em></p>
+<p align="center"><em>Overview of the TiMER architecture.</em></p>
 
-TiMER consists of four main stages:
+TiMER consists of four stages:
 
-1. **Multi-Granularity Time Encoder (MTE)** extracts fine- and coarse-grained temporal representations.
-2. **Query-Adaptive Granularity Router (QGR)** predicts question-conditioned weights for the local, global, and cross-granularity experts.
-3. **Granularity-aware Temporal Experts Aggregation** adaptively pools and combines the routed representations.
-4. **Time-to-Language Alignment** maps the resulting time tokens into the language-model representation space before integrating them with the text tokens.
+1. **Multi-Granularity Time Encoder (MTE)** extracts fine-grained local patterns and coarse-grained global trends.
+2. **Query-Adaptive Granularity Router (QGR)** estimates query-dependent weights for the local, global, and cross-granularity experts.
+3. **Granularity-aware Temporal Experts Aggregation (GTE)** combines the expert representations into query-adaptive time tokens.
+4. **Time-to-Language Alignment (TLA)** maps the time tokens into the LLM input space for answer generation.
 
-## ✨ Highlights
-
-- **Question-aware routing:** selects temporal evidence according to what the question asks.
-- **Multi-granularity reasoning:** jointly models local, global, and cross-granularity patterns.
-- **Parameter-efficient adaptation:** supports a frozen LLM as well as LoRA fine-tuning.
-- **Reproducible evaluation:** reports sample-level predictions, accuracy, and MoE routing statistics.
-- **Built-in ablations:** supports `raw`, `fine`, `coarse`, `fused`, `moe`, `moe_without_routing`, and `signal_moe` signal paths.
+During training, MTE and the LLM remain frozen, while QGR, GTE, and TLA are optimized.
 
 ## 📦 Resources
 
