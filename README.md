@@ -10,9 +10,9 @@
 </p>
 
 <p>
-  <a href="https://idsl.hanyang.ac.kr/members/students/%EC%A0%84%ED%98%84%EC%95%84"><strong>Hyuna Jeon<sup>†</sup></strong></a>
+  <a href="https://www.linkedin.com/in/hyun-a-jeon-888347376/"><strong>Hyuna Jeon<sup>†</sup></strong></a>
   &nbsp;&nbsp;
-  <strong>Jaeyoung Lee<sup>†</sup></strong>
+  <a href="https://www.linkedin.com/in/jaeyoung-lee-6933b7337/"><strong>Jaeyoung Lee<sup>†</sup></strong></a>
   &nbsp;&nbsp;
   <strong>Misuk Kim<sup>*</sup></strong>
 </p>
