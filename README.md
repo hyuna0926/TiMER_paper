@@ -22,7 +22,11 @@
 </p>
 
 <p>
-  📄 <a href="#-citation"><strong>Paper</strong></a> (Coming Soon)
+  📄 <a href="https://aclanthology.org/2026.emnlp-main.1397/"><strong>Paper</strong></a>
+  &nbsp; | &nbsp;
+  <a href="https://aclanthology.org/2026.emnlp-main.1397.pdf"><strong>PDF</strong></a>
+  &nbsp; | &nbsp;
+  <a href="https://github.com/hyuna0926/TiMER_paper"><strong>Code</strong></a>
   &nbsp; | &nbsp;
   🤗 <a href="https://huggingface.co/datasets/TSAQA/TSAQA-Benchmark"><strong>Dataset</strong></a>
 </p>
@@ -164,7 +168,29 @@ TiMER_paper/
 
 ## 📝 Citation
 
-If you find TiMER useful in your research, please cite our paper. The BibTeX entry will be added when the paper becomes publicly available.
+If you find TiMER useful in your research, please cite our paper.
+
+```bibtex
+@inproceedings{jeon-etal-2026-bridging,
+    title = "Bridging Time Series and Language via Query-Adaptive Multi-Granularity Routing for Temporal Reasoning",
+    author = "Jeon, Hyuna  and
+      Lee, Jaeyoung  and
+      Kim, Misuk",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.1397/",
+    doi = "10.18653/2026.emnlp-main.1397",
+    pages = "31917--31935",
+    ISBN = "979-8-89176-459-0"
+}
+```
 
 ---
 
